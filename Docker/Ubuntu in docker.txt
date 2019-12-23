@@ -1,0 +1,8 @@
+
+1. docker port ['nama container']
+
+2. docker exec -it srvr1 /bin/bash
+
+3. /# apt-get update
+
+4. /# apt-get install apache2 

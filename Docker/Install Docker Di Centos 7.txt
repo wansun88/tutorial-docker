@@ -1,0 +1,103 @@
+2019-12
+
+Install Docker Di Centos 7
+
+1. sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+2. sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+3. sudo yum-config-manager --enable docker-ce-edge
+
+4. sudo yum-config-manager --enable docker-ce-test
+
+5. sudo yum install docker-ce
+	or
+   sudo yum install docker-ce docker-ce-cli containerd.io
+
+=====================================================================================
+Melihat info di docker
+
+1. docker info
+2. docker --version
+3. docker version
+
+=====================================================================================
+Mengambil image dari registry
+
+1. docker images
+
+REPOSITORY 	TAG 	IMAGE ID 	CREATED 	SIZE
+
+1b. docker images
+
+REPOSITORY 	TAG 	IMAGE ID 	CREATED 	SIZE
+mongo 		3.6.16 	- 		- 		-
+===================================================================================
+Mengambil images
+
+1. docker pull httpd
+
+
+===================================================================================
+2. docker container ls
+
+3. docker container create --name monggodb1 mongo:3.6.16
+
+4. docker container ls --all
+
+5. docker container start mongodb1
+
+===========================================================================
+Menghapus container
+
+1. docker container rm ['nama container']
+
+===========================================================================
+Membuka port untuk public
+
+1. docker container create --name apache1 -p 8080:27017
+
+2. nb : docker run -td --name srvr1 -p 80:80 ubuntu
+
+==========================================================================
+Menghapus image
+
+1. docker image rm ['nama image']
+
+==========================================================================
+Membuat Image
+
+1. docker build --tag app-golang:1.0 .
+
+==========================================================================
+Mengupload image ke registy
+
+1. docker push ['username/namaimage:tag']  
+
+2. docker tag local-image:tagname reponame:tagname
+
+3. docker push reponame:tagname
+
+4. docker login
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
