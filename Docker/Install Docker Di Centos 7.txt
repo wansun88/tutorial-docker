@@ -39,11 +39,13 @@ Mengambil images
 
 
 ===================================================================================
-2. docker container ls
+Perintah melihat container
+
+2. docker container ls <untuk melihat container yang running>
 
 3. docker container create --name monggodb1 mongo:3.6.16
 
-4. docker container ls --all
+4. docker container ls --all <untuk melihat daftar container semuanya>
 
 5. docker container start mongodb1
 
