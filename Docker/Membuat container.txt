@@ -1,0 +1,29 @@
+
+1. sebelum membuat container kita harus mempunyai image terlebih dahulu
+
+	contoh : docker pull mongo:4.1
+	sebuat image mongodb dengan tag : 4.1
+	yang di ambil dari docker hub
+
+2. membuat conatiner
+	#docker container create --name mongoserver1 mongo:4.1
+	pembuatan container dengan nama mongoserver1 dengan tag 4.1
+
+3. Menjalankan container
+	#docker container start [diikuti nama containernya]
+	#docker container start mongoserver1
+
+4. Menghapus container
+	#docker conatiner rm [diikuti dengan nama container]
+	#docker container rm mongoserver1
+
+5. Menghentikan container
+	#docker container stop [container1] [conatiner2]
+
+6. Meng expos port container
+	#docker container create --name mongoserver1 -p 8080:27017 [docker image]
+	#docker container create --name mongoserver1 -p 8080:27017 mongo:4.1
+
+7.
+	
+
